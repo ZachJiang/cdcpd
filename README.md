@@ -34,6 +34,14 @@ sudo apt install libeigen3-dev libgcgal-qt5-dev libopencv-dev
 
 FAISS: should be installed from source, please see `install_scripts/install_faiss.sh`
 
+
+* Gurobi: follow instructions here https://www.gurobi.com/documentation/9.0/quickstart_linux/software_installation_guid.html
+
+#### Gurobi Licence
+
+Gurobi is a proprietary optimization package that we use. Please obtain a [free academic license](https://www.gurobi.com/academia/academic-program-and-licenses).
+
+
 We assume you have created a catkin workspace. Now clone this repo to that worksace. See `install_scripts/setup_ws.sh` or the ROS wiki on how to setup a catkin workspace.
 
 
@@ -42,12 +50,8 @@ We assume you have created a catkin workspace. Now clone this repo to that works
 git clone https://github.com/UM-ARM-Lab/cdcpd.git
 ```
 
+Once you've cloned, it might be a good idea to `rosdep instll -r --from-paths cdcpd -y` to get any ROS packages you might be depending on.
 
-* Gurobi: follow instructions here https://www.gurobi.com/documentation/9.0/quickstart_linux/software_installation_guid.html
-
-#### Gurobi Licence
-
-Gurobi is a proprietary optimization package that we use. Please obtain a [free academic license](https://www.gurobi.com/academia/academic-program-and-licenses).
 
 Demo
 ------------
